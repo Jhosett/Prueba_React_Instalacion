@@ -24,16 +24,40 @@ export default function HookTable() {
       categoria: "Referencia"
     },
     {
+      hook: "useImperativeHandle",
+      ruta: "/useImperativeHandle",
+      descripcion: "Permite que un componente hijo exponga métodos al componente padre usando refs.",
+      categoria: "Referencia"
+    },
+    {
+      hook: "useMemo",
+      ruta: "/useMemo",
+      descripcion: "Memoriza cálculos costosos para evitar recomputaciones innecesarias.",
+      categoria: "Performance"
+    },
+    {
+      hook: "useCallback",
+      ruta: "/useCallback",
+      descripcion: "Memoriza funciones para evitar recrearlas en cada render.",
+      categoria: "Performance"
+    },
+    {
       hook: "useTransition",
       ruta: "/useTransition",
       descripcion: "Permite marcar actualizaciones como de baja prioridad para mejorar la experiencia de usuario.",
-      categoria: "Concurrencia"
+      categoria: "Performance"
+    },
+    {
+      hook: "useDeferredValue",
+      ruta: "/useDeferredValue",
+      descripcion: "Permite retrasar la actualización de un valor para mejorar el rendimiento.",
+      categoria: "Performance"
     }
   ];
 
   return (
     <div className='w-full max-w-5xl mx-auto'>
-        <table className='w-full border border-gray-300 rounded-lg overflow-hidden shadow'>
+        <table className='w-full border border-gray-300 rounded-lg overflow-hidden shadow my-10'>
           {/* Encabezado de la tabla */}
           <thead className='bg-gray-800 text-white'>
             <tr>
