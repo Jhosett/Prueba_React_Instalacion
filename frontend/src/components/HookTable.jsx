@@ -22,6 +22,12 @@ export default function HookTable() {
       ruta: "/useRef",
       descripcion: "Permite acceder directamente a un elemento del DOM o almacenar valores persistentes.",
       categoria: "Referencia"
+    },
+    {
+      hook: "useTransition",
+      ruta: "/useTransition",
+      descripcion: "Permite marcar actualizaciones como de baja prioridad para mejorar la experiencia de usuario.",
+      categoria: "Concurrencia"
     }
   ];
 
