@@ -7,6 +7,7 @@ import HomeHooks from './playground/HomeHooks'
 import HookUseNavigate from './playground/HookUseNavigate'
 import HookUseState from './playground/HookUseState'
 import HookUseRef from './playground/HookUseRef'
+import HookUseTransition from './playground/HookUseTransition'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/useState' element={<HookUseState/>}></Route>
         <Route path='/useNavigate' element={<HookUseNavigate/>}></Route>
         <Route path='/useRef' element={<HookUseRef/>}></Route>
+        <Route path='/useTransition' element={<HookUseTransition/>}></Route>
       </Routes>
     </BrowserRouter>
   )
