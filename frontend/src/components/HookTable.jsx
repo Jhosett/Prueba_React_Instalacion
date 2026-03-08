@@ -17,6 +17,12 @@ export default function HookTable() {
       descripcion: "Permite navegar entre rutas en React Router.",
       categoria: "Navegación",
     },
+    {
+      hook: "useRef",
+      ruta: "/useRef",
+      descripcion: "Permite acceder directamente a un elemento del DOM o almacenar valores persistentes.",
+      categoria: "Referencia"
+    }
   ];
 
   return (

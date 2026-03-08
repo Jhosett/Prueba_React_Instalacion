@@ -6,6 +6,7 @@ import Saludar from './playground/Component'
 import HomeHooks from './playground/HomeHooks'
 import HookUseNavigate from './playground/HookUseNavigate'
 import HookUseState from './playground/HookUseState'
+import HookUseRef from './playground/HookUseRef'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/saludar' element={<Saludar/>}></Route>
         <Route path='/useState' element={<HookUseState/>}></Route>
         <Route path='/useNavigate' element={<HookUseNavigate/>}></Route>
+        <Route path='/useRef' element={<HookUseRef/>}></Route>
       </Routes>
     </BrowserRouter>
   )
