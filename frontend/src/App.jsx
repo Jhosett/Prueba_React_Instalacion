@@ -12,6 +12,9 @@ import HookUseMemo from './playground/HookUseMemo'
 import HookUseCallback from './playground/HookUseCallback'
 import HookUseImperativeHandle from './playground/HookUseImperativeHandle'
 import HookUseDeferredValue from './playground/HookUseDeferredValue'
+import HookUseEffect from './playground/HookUseEffect'
+import HookUseLayoutEffect from './playground/HookUseLayoutEffect'
+import HookUseInsertionEffect from './playground/HookUseInsertionEffect'
 
 function App() {
   return (
@@ -27,6 +30,9 @@ function App() {
         <Route path='/useCallback' element={<HookUseCallback/>}></Route>
         <Route path='/useTransition' element={<HookUseTransition/>}></Route>
         <Route path='/useDeferredValue' element={<HookUseDeferredValue/>}></Route>
+        <Route path='/useEffect' element={<HookUseEffect/>}></Route>
+        <Route path='/useLayoutEffect' element={<HookUseLayoutEffect/>}></Route>
+        <Route path='/useInsertionEffect' element={<HookUseInsertionEffect/>}></Route>
       </Routes>
     </BrowserRouter>
   )

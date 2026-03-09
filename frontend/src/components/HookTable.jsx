@@ -52,6 +52,24 @@ export default function HookTable() {
       ruta: "/useDeferredValue",
       descripcion: "Permite retrasar la actualización de un valor para mejorar el rendimiento.",
       categoria: "Performance"
+    },
+    {
+      hook: "useEffect",
+      ruta: "/useEffect",
+      descripcion: "Permite ejecutar efectos secundarios en componentes.",
+      categoria: "Efectos"
+    },
+    {
+      hook: "useLayoutEffect",
+      ruta: "/useLayoutEffect",
+      descripcion: "Permite ejecutar efectos antes de que el navegador pinte la pantalla.",
+      categoria: "Efectos"
+    },
+    {
+      hook: "useInsertionEffect",
+      ruta: "/useInsertionEffect",
+      descripcion: "Permite insertar estilos en el DOM antes del cálculo del layout.",
+      categoria: "Efectos"
     }
   ];
 
