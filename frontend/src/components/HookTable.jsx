@@ -6,10 +6,16 @@ export default function HookTable() {
   //Información de contenido de la tabla de Hooks
   const hooks = [
     {
-    hook: "useState",
-    ruta: "/useState",
-    descripcion: "Permite usar estado en componentes funcionales",
-    categoria: "Estado"
+      hook: "useState",
+      ruta: "/useState",
+      descripcion: "Permite usar estado en componentes funcionales",
+      categoria: "Estado"
+    },
+    {
+      hook: "useReducer",
+      ruta: "/useReducer",
+      descripcion: "Es un Hook de React que te permite agregar un reducer a tu componente.",
+      categoria: "Estado"
     },
     {
       hook: "useNavigate",
