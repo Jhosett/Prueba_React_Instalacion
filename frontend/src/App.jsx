@@ -15,6 +15,7 @@ import HookUseDeferredValue from './playground/HookUseDeferredValue'
 import HookUseEffect from './playground/HookUseEffect'
 import HookUseLayoutEffect from './playground/HookUseLayoutEffect'
 import HookUseInsertionEffect from './playground/HookUseInsertionEffect'
+import HookUseReducer from './playground/HookUseReducer'
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path='/useEffect' element={<HookUseEffect/>}></Route>
         <Route path='/useLayoutEffect' element={<HookUseLayoutEffect/>}></Route>
         <Route path='/useInsertionEffect' element={<HookUseInsertionEffect/>}></Route>
+        <Route path='/useReducer' element={<HookUseReducer/>}></Route>
       </Routes>
     </BrowserRouter>
   )
