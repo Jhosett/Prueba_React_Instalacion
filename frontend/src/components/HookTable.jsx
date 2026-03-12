@@ -6,10 +6,16 @@ export default function HookTable() {
   //Información de contenido de la tabla de Hooks
   const hooks = [
     {
-    hook: "useState",
-    ruta: "/useState",
-    descripcion: "Permite usar estado en componentes funcionales",
-    categoria: "Estado"
+      hook: "useState",
+      ruta: "/useState",
+      descripcion: "Permite usar estado en componentes funcionales",
+      categoria: "Estado"
+    },
+    {
+      hook: "useReducer",
+      ruta: "/useReducer",
+      descripcion: "Es un Hook de React que te permite agregar un reducer a tu componente.",
+      categoria: "Estado"
     },
     {
       hook: "useNavigate",
@@ -70,6 +76,30 @@ export default function HookTable() {
       ruta: "/useInsertionEffect",
       descripcion: "Permite insertar estilos en el DOM antes del cálculo del layout.",
       categoria: "Efectos"
+    },
+    {
+      hook: "Use",
+      ruta: "/use",
+      descripcion: "permite leer el valor de un recurso (como una Promesa o un Contexto) directamente durante el renderizado.",
+      categoria: "Nuevos React 19"
+    },
+    {
+      hook: "UseOptimistic",
+      ruta: "/useOptimistic",
+      descripcion: "Es un Hook de React que te permite actualizar la interfaz de usuario / UI de manera optimista.",
+      categoria: "Nuevos React 19"
+    },
+    {
+      hook: "UseFormStatus",
+      ruta: "/useFormStatus",
+      descripcion: "Es un Hook que brinda información de estado del último formulario enviado.",
+      categoria: "Nuevos React 19"
+    },
+    {
+      hook: "UseActionState",
+      ruta: "/useActionState",
+      descripcion: "Es un Hook que permite actualizar el estado en función del resultado de una acción de formulario.",
+      categoria: "Nuevos React 19"
     }
   ];
 

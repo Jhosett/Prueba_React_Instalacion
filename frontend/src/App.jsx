@@ -15,6 +15,12 @@ import HookUseDeferredValue from './playground/HookUseDeferredValue'
 import HookUseEffect from './playground/HookUseEffect'
 import HookUseLayoutEffect from './playground/HookUseLayoutEffect'
 import HookUseInsertionEffect from './playground/HookUseInsertionEffect'
+import HookUseReducer from './playground/HookUseReducer'
+import HookUse from './playground/HookUse'
+import HookUseOptimistic from './playground/HookUseOptimistic'
+import HookUseFormStatus from './playground/HookUseFormStatus'
+import HookUseActionState from './playground/HookUseActionState'
+
 
 function App() {
   return (
@@ -33,6 +39,11 @@ function App() {
         <Route path='/useEffect' element={<HookUseEffect/>}></Route>
         <Route path='/useLayoutEffect' element={<HookUseLayoutEffect/>}></Route>
         <Route path='/useInsertionEffect' element={<HookUseInsertionEffect/>}></Route>
+        <Route path='/useReducer' element={<HookUseReducer/>}></Route>
+        <Route path='/use' element={<HookUse/>}></Route>
+        <Route path='/useOptimistic' element={<HookUseOptimistic/>}></Route>
+        <Route path='/useFormStatus' element={<HookUseFormStatus/>}></Route>
+        <Route path='/useActionState' element={<HookUseActionState/>}></Route>
       </Routes>
     </BrowserRouter>
   )
