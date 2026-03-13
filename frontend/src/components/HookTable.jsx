@@ -84,6 +84,24 @@ export default function HookTable() {
       categoria: "Efectos"
     },
     {
+      hook: "useContext",
+      ruta: "/useContext",
+      descripcion: "Permite acceder a valores compartidos mediante el Context API sin pasar props manualmente.",
+      categoria: "Contexto"
+    },
+    {
+      hook: "useSyncExternalStore",
+      ruta: "/useSyncExternalStore",
+      descripcion: "Permite suscribirse a un estado almacenado fuera de React y mantenerlo sincronizado.",
+      categoria: "Estado avanzado"
+    },
+    {
+      hook: "useId",
+      ruta: "/useId",
+      descripcion: "Genera identificadores únicos y estables que pueden usarse para asociar elementos como label e input en formularios.",
+      categoria: "Utilidades"
+    },
+    {
       hook: "Use",
       ruta: "/use",
       descripcion: "permite leer el valor de un recurso (como una Promesa o un Contexto) directamente durante el renderizado.",
