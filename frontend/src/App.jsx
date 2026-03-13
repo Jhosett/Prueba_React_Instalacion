@@ -21,6 +21,7 @@ import HookUseOptimistic from './playground/HookUseOptimistic'
 import HookUseFormStatus from './playground/HookUseFormStatus'
 import HookUseActionState from './playground/HookUseActionState'
 import HookUseDebugValue from './playground/HookUseDebugValue'
+import HookUseContext from './playground/HookUseContex'
 
 
 function App() {
@@ -45,7 +46,8 @@ function App() {
         <Route path='/useOptimistic' element={<HookUseOptimistic/>}></Route>
         <Route path='/useFormStatus' element={<HookUseFormStatus/>}></Route>
         <Route path='/useActionState' element={<HookUseActionState/>}></Route>
-        <Route path="/useDebugValue" element={<HookUseDebugValue/>}></Route> 
+        <Route path="/useDebugValue" element={<HookUseDebugValue/>}></Route>
+        <Route path="/useContext" element={<HookUseContext/>}></Route> 
       </Routes>
     </BrowserRouter>
   )

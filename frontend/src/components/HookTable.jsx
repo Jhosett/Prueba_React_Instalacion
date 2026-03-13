@@ -84,6 +84,12 @@ export default function HookTable() {
       categoria: "Efectos"
     },
     {
+      hook: "useContext",
+      ruta: "/useContext",
+      descripcion: "Permite acceder a valores compartidos mediante el Context API sin pasar props manualmente.",
+      categoria: "Contexto"
+    },
+    {
       hook: "Use",
       ruta: "/use",
       descripcion: "permite leer el valor de un recurso (como una Promesa o un Contexto) directamente durante el renderizado.",
