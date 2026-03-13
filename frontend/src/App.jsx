@@ -22,6 +22,7 @@ import HookUseFormStatus from './playground/HookUseFormStatus'
 import HookUseActionState from './playground/HookUseActionState'
 import HookUseDebugValue from './playground/HookUseDebugValue'
 import HookUseContext from './playground/HookUseContex'
+import HookUseSyncExternalStore from './playground/HookUseSyncExternalStore'
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <Route path='/useActionState' element={<HookUseActionState/>}></Route>
         <Route path="/useDebugValue" element={<HookUseDebugValue/>}></Route>
         <Route path="/useContext" element={<HookUseContext/>}></Route> 
+        <Route path='/useSyncExternalStore' element={<HookUseSyncExternalStore/>}></Route>
       </Routes>
     </BrowserRouter>
   )

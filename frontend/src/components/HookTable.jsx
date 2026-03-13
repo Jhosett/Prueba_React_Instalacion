@@ -90,6 +90,12 @@ export default function HookTable() {
       categoria: "Contexto"
     },
     {
+      hook: "useSyncExternalStore",
+      ruta: "/useSyncExternalStore",
+      descripcion: "Permite suscribirse a un estado almacenado fuera de React y mantenerlo sincronizado.",
+      categoria: "Estado avanzado"
+    },
+    {
       hook: "Use",
       ruta: "/use",
       descripcion: "permite leer el valor de un recurso (como una Promesa o un Contexto) directamente durante el renderizado.",
