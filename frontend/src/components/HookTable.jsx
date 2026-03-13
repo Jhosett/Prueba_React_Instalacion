@@ -1,0 +1,172 @@
+import React from 'react'
+import { Link } from 'react-router-dom';
+
+export default function HookTable() {
+
+  //Información de contenido de la tabla de Hooks
+  const hooks = [
+    {
+      hook: "useDebugValue",
+      ruta: "/useDebugValue",
+      descripcion: "Permite mostrar valores personalizados en React DevTools para depurar Custom Hooks.",
+      categoria: "Debug"
+    },
+    {
+      hook: "useState",
+      ruta: "/useState",
+      descripcion: "Permite usar estado en componentes funcionales",
+      categoria: "Estado"
+    },
+    {
+      hook: "useReducer",
+      ruta: "/useReducer",
+      descripcion: "Es un Hook de React que te permite agregar un reducer a tu componente.",
+      categoria: "Estado"
+    },
+    {
+      hook: "useNavigate",
+      ruta: "/useNavigate",
+      descripcion: "Permite navegar entre rutas en React Router.",
+      categoria: "Navegación",
+    },
+    {
+      hook: "useRef",
+      ruta: "/useRef",
+      descripcion: "Permite acceder directamente a un elemento del DOM o almacenar valores persistentes.",
+      categoria: "Referencia"
+    },
+    {
+      hook: "useImperativeHandle",
+      ruta: "/useImperativeHandle",
+      descripcion: "Permite que un componente hijo exponga métodos al componente padre usando refs.",
+      categoria: "Referencia"
+    },
+    {
+      hook: "useMemo",
+      ruta: "/useMemo",
+      descripcion: "Memoriza cálculos costosos para evitar recomputaciones innecesarias.",
+      categoria: "Performance"
+    },
+    {
+      hook: "useCallback",
+      ruta: "/useCallback",
+      descripcion: "Memoriza funciones para evitar recrearlas en cada render.",
+      categoria: "Performance"
+    },
+    {
+      hook: "useTransition",
+      ruta: "/useTransition",
+      descripcion: "Permite marcar actualizaciones como de baja prioridad para mejorar la experiencia de usuario.",
+      categoria: "Performance"
+    },
+    {
+      hook: "useDeferredValue",
+      ruta: "/useDeferredValue",
+      descripcion: "Permite retrasar la actualización de un valor para mejorar el rendimiento.",
+      categoria: "Performance"
+    },
+    {
+      hook: "useEffect",
+      ruta: "/useEffect",
+      descripcion: "Permite ejecutar efectos secundarios en componentes.",
+      categoria: "Efectos"
+    },
+    {
+      hook: "useLayoutEffect",
+      ruta: "/useLayoutEffect",
+      descripcion: "Permite ejecutar efectos antes de que el navegador pinte la pantalla.",
+      categoria: "Efectos"
+    },
+    {
+      hook: "useInsertionEffect",
+      ruta: "/useInsertionEffect",
+      descripcion: "Permite insertar estilos en el DOM antes del cálculo del layout.",
+      categoria: "Efectos"
+    },
+    {
+      hook: "useContext",
+      ruta: "/useContext",
+      descripcion: "Permite acceder a valores compartidos mediante el Context API sin pasar props manualmente.",
+      categoria: "Contexto"
+    },
+    {
+      hook: "useSyncExternalStore",
+      ruta: "/useSyncExternalStore",
+      descripcion: "Permite suscribirse a un estado almacenado fuera de React y mantenerlo sincronizado.",
+      categoria: "Estado avanzado"
+    },
+    {
+      hook: "useId",
+      ruta: "/useId",
+      descripcion: "Genera identificadores únicos y estables que pueden usarse para asociar elementos como label e input en formularios.",
+      categoria: "Utilidades"
+    },
+    {
+      hook: "Use",
+      ruta: "/use",
+      descripcion: "permite leer el valor de un recurso (como una Promesa o un Contexto) directamente durante el renderizado.",
+      categoria: "Nuevos React 19"
+    },
+    {
+      hook: "UseOptimistic",
+      ruta: "/useOptimistic",
+      descripcion: "Es un Hook de React que te permite actualizar la interfaz de usuario / UI de manera optimista.",
+      categoria: "Nuevos React 19"
+    },
+    {
+      hook: "UseFormStatus",
+      ruta: "/useFormStatus",
+      descripcion: "Es un Hook que brinda información de estado del último formulario enviado.",
+      categoria: "Nuevos React 19"
+    },
+    {
+      hook: "UseActionState",
+      ruta: "/useActionState",
+      descripcion: "Es un Hook que permite actualizar el estado en función del resultado de una acción de formulario.",
+      categoria: "Nuevos React 19"
+    }
+  ];
+
+  return (
+    <div className='w-full max-w-5xl mx-auto'>
+      <table className='w-full border border-gray-300 rounded-lg overflow-hidden shadow my-10'>
+        {/* Encabezado de la tabla */}
+        <thead className='bg-gray-800 text-white'>
+          <tr>
+            <th className='px-4 py-3 text-left'>Ruta</th>
+            <th className='px-4 py-3 text-center'>Hook</th>
+            <th className='px-4 py-3 text-left'>Descripción</th>
+            <th className='px-4 py-3 text-center'>Categoría</th>
+          </tr>
+        </thead>
+
+        {/* Cuerpo de la tabla */}
+        <tbody className='bg-white'>
+          {
+            hooks.map((item, index) => (
+              <tr key={index} className='border-t hover:bg-gray-100 transition'>
+                <td className='px-4 py-3 font-bold border border-gray-300'>
+                  {item.hook}
+                </td>
+                <td className="px-4 py-3 text-center border border-gray-300">
+                  <Link to={item.ruta}>
+                    <button className='bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded-md text-sm'>
+                      Ir a ejemplo
+                    </button>
+                  </Link>
+                </td>
+                <td className="px-4 py-3 border border-gray-300">
+                  {item.descripcion}
+                </td>
+                <td className="px-4 py-3 text-center font-semibold border border-gray-300">
+                  {item.categoria}
+                </td>
+              </tr>
+            )
+            )
+          }
+        </tbody>
+      </table>
+    </div>
+  )
+}
