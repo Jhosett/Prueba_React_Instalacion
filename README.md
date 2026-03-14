@@ -208,6 +208,7 @@ Se creó una caja cuyo estilo se inserta dinámicamente en el documento.
 
 Este ejemplo demuestra cómo los estilos pueden ser insertados antes del renderizado final del layout.
 
+# Hooks - Juan Carlos Melo
 ## useDebugValue
 useDebugValue es un Hook de React que permite mostrar información personalizada de un Custom Hook dentro de React Developer Tools. Su objetivo es facilitar la depuración mostrando datos relevantes sobre el estado interno del hook.
 
@@ -299,3 +300,28 @@ React Router
 Tailwind CSS
 
 React Hooks
+
+# Hooks - Angel Boada
+## 1. use
+Este hook permite leer el valor de un recurso, como una Promesa o un Contexto, directamente durante el renderizado del componente. Si el recurso no se ha resuelto, el componente suspende su ejecución.
+
+* *Característica principal:* A diferencia del resto de los hooks de React, use puede ser invocado de manera condicional (dentro de bloques if o bucles).
+* *Caso de uso principal:* Lectura de datos asíncronos provenientes del servidor para renderizarlos sin necesidad de gestionar estados (useState) o efectos (useEffect) de forma manual.
+
+## 2. useOptimistic
+Proporciona una forma de actualizar la interfaz de usuario de manera inmediata tras una interacción del usuario, asumiendo que la petición asíncrona subyacente será exitosa.
+
+* *Característica principal:* Si la comunicación con el servidor falla, el hook revierte automáticamente la interfaz al estado original. Para funcionar correctamente, la actualización del estado debe ejecutarse dentro de un startTransition o una Acción de React.
+* *Caso de uso principal:* Mejorar la percepción de velocidad en interacciones comunes, como dar "Me gusta" a un elemento o marcar una tarea como completada.
+
+## 3. useFormStatus
+Permite conocer el estado actual de envío de un formulario sin necesidad de declarar variables de estado adicionales ni pasar propiedades entre componentes.
+
+* *Característica principal:* Expone la propiedad pending, la cual indica si el formulario está en proceso de envío. Por diseño, este hook debe ser utilizado estrictamente dentro de un componente que sea hijo directo o descendiente de la etiqueta <form>.
+* *Caso de uso principal:* Deshabilitar botones de envío y mostrar indicadores de carga de forma automática mientras el servidor procesa los datos.
+
+## 4. useActionState
+Este hook está diseñado para gestionar el resultado devuelto tras el envío de un formulario mediante Server Actions. 
+
+* *Característica principal:* Recibe la función de la acción del formulario y un estado inicial. Devuelve el estado actualizado con la respuesta del servidor (incluyendo posibles errores o mensajes de éxito), la nueva acción a vincular en el formulario y el estado de carga.
+* *Caso de uso principal:* Manejo de validaciones, visualización de errores y confirmaciones en procesos como inicios de sesión, registros o envío de información.
