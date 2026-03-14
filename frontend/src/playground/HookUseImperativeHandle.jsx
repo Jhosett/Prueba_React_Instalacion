@@ -18,7 +18,7 @@ export default function HookUseImperativeHandle() {
           <span className="text-xl">Atrás</span>
         </button>
         <h1 className="text-center text-4xl font-bold m-4 text-gray-600">
-          Ejemplo de Hook useRef
+          Ejemplo de Hook useImperativeHandle
         </h1>
       </div>
       <div className="max-w-2xl mx-auto my-8 p-6 bg-slate-50 border-l-4 border-indigo-500 rounded-r-xl shadow-sm">
